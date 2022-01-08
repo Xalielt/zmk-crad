@@ -83,8 +83,8 @@
 		second_layer {
 		bindings = <
 		&kp NUM_1       &kp NUM_2       &kp NUM_3       &kp NUM_4       &kp NUM_5		    &kp NUM_6       &kp NUM_7       &kp NUM_8       &kp NUM_9       &kp NUM_0 
-		&kp HASH        &kp QMARK       &kp FSLH        &kp SEMI        &kp EQUAL		    &kp MINUS       &kp PLUS        &kp FSLH        &kp KP_MULTIPLY &kp BKSP
-		&kp LSFT        &kp KPLS        &kp LBKT        &kp RBKT        &kp BSLH    		&kp UNDER       &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT
+		&kp LSFT        &kp QMARK       &kp FSLH        &kp SEMI        &kp EQUAL		    &kp MINUS       &kp PLUS        &kp FSLH        &kp KP_MULTIPLY &kp BKSP
+		&kp LCTRL        &kp KPLS        &kp LBKT        &kp RBKT        &kp BSLH    		&kp UNDER       &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT
 					                                    &to 0           &kp LGUI  	        &kp SPC         &to 2 
 		>;
 		};
