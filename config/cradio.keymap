@@ -124,7 +124,7 @@
 		
 		Layer_tap_layer {
 		bindings = <		
-		&none       &none        &none        &none          &none		&kp Z.      &kp C      &kp UP       &kp V  &none 
+		&none       &none        &none        &none          &none		&kp Z      &kp C      &kp UP       &kp V  &none 
 		&none       &none        &none        &none          &none		&none       &kp LEFT     &kp DOWN     &kp RIGHT    &none
 		&none       &none        &none        &none          &none    		&none       &none        &none        &none        &none
 					              &kp TAB        &kp LALT  	        &kp LSFT         &none 
