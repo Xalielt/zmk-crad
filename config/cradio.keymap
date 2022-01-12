@@ -84,7 +84,7 @@
 					                    	            &to LALT        &kp LGUI 		&kp SPACE         &KP RET
 		>;
 		};
-	
+
 		
 		numpad_layer {
 		bindings = <
