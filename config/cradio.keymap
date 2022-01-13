@@ -59,6 +59,12 @@
             key-positions = <17 18>;
             bindings = <&kp ATSN>;
         };
+
+           combo_dot {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&kp DOT>;
+        };
         
     };
 
@@ -89,8 +95,8 @@
 		numpad_layer {
 		bindings = <
 		&none       	&none        	&kp EQUAL       &none          	&none			&kp KP_DIVIDE   &kp N7          &kp N8          &kp N9           &kp KP_PLUS
-		&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4  	&kp KP_DOT      &kp N4          &kp N5          &kp N6           &kp KP_MINUS
-		&bt BT_CLR      &bt BT_NXT      &bt BT_PRV      &none           &none   		&kp N0           &kp N1          &kp N2          &kp N3           &kp KP_MULTIPLY
+		&mt LSFT BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4  	&kp KP_DOT      &kp N4          &kp N5          &kp N6           &kp KP_MINUS
+		&mt LCTRL BT_CLR      &bt BT_NXT      &bt BT_PRV      &none           &none   		&kp N0           &kp N1          &kp N2          &kp N3           &kp KP_MULTIPLY
                                                         &kp LALT        &kp LGUI  	    &kp SPACE       &kp RET
 		>;
 		};	
