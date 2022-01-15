@@ -10,8 +10,8 @@
 
 
 &mt {
-  //  flavor = "tap-preferred";
-   // tapping_term_ms = <200>;
+   flavor = "tap-preferred";
+    tapping_term_ms = <300>;
 };
 
 / { 
@@ -24,16 +24,23 @@
             bindings = <&kp ESC>;
         }; 
 
-        combo_bspc {
+        combo_tilde {
             timeout-ms = <50>;
-            key-positions = <6 7>;
-            bindings = <&kp BSPC>;
-        };
-
+            key-positions = <1 2>;
+            bindings = <&kp TILDE>;
+        };        
+        
            combo_tab {
             timeout-ms = <50>;
             key-positions = <10 11>;
             bindings = <&kp TAB>;
+        };
+
+
+        combo_bspc {
+            timeout-ms = <50>;
+            key-positions = <6 7>;
+            bindings = <&kp BSPC>;
         };
 
            combo_del {
@@ -42,30 +49,48 @@
             bindings = <&kp DEL>;
         };
 
-           combo_quest {
+        
+           combo_dash {
             timeout-ms = <50>;
             key-positions = <15 16>;
-            bindings = <&kp QMARK>;
+            bindings = <&kp MINUS>;
         };
 
-           combo_exc {
-            timeout-ms = <50>;
-            key-positions = <16 17>;
-            bindings = <&kp EXCL>;
-        };
-
-           combo_at {
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&kp ATSN>;
-        };
 
            combo_dot {
             timeout-ms = <50>;
-            key-positions = <26 27>;
+            key-positions = <16 17>;
             bindings = <&kp DOT>;
         };
-        
+
+           combo_qmrk {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp QMARK>;
+        };
+           combo_excl {
+            timeout-ms = <50>;
+            key-positions = <18 19>;
+            bindings = <&kp EXCL>;
+        };
+
+
+           combo_lpar {
+            timeout-ms = <50>;
+            key-positions = <25 26>;
+            bindings = <&kp LPAR>;
+        };
+
+           combo_rpar {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&kp RPAR>;
+        };
+            combo_quote {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp SINGLE_QUOTE>;
+        };
     };
 
 
@@ -76,7 +101,7 @@
        	default_layer {
 		bindings = <
 		&kp Q           &kp W           &kp E           &kp R         &lt 3 T 		    &kp Y           &kp U           &kp I           &kp O       &kp P 
-		&mt LSFT A      &kp S           &kp D           &kp F           &lt 4 G	   	    &kp H           &kp J           &kp K           &kp L       &mt LSFT MINUS
+		&mt LSFT A      &kp S           &kp D           &kp F           &lt 4 G	   	    &kp H           &kp J           &kp K           &kp L       &mt LSFT SEMI
 		&mt LCTRL Z     &kp X           &kp C           &lt 1 V         &lt 2 B 		&kp N           &kp M           &kp CMMA        &kp DOT     &mt LCTRL FSLH
           				                                &kp LALT        &kp LGUI  		&kp SPACE         &kp RET 
 		>;
