@@ -40,6 +40,15 @@
         };
 
 
+
+
+        combo_excl {
+            timeout-ms = <50>;
+            key-positions = <5 6>;
+            bindings = <&kp EXCL>;
+        };
+
+
         combo_bspc {
             timeout-ms = <50>;
             key-positions = <6 7>;
@@ -51,7 +60,11 @@
             key-positions = <7 8>;
             bindings = <&kp DEL>;
         };
-
+           combo_pipe {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp PIPE>;
+        };
         
            combo_dash {
             timeout-ms = <50>;
@@ -71,12 +84,6 @@
             key-positions = <17 18>;
             bindings = <&kp QMARK>;
         };
-           combo_excl {
-            timeout-ms = <50>;
-            key-positions = <18 19>;
-            bindings = <&kp EXCL>;
-        };
-
 
            combo_lpar {
             timeout-ms = <50>;
