@@ -142,8 +142,8 @@
 		numpad_layer {
 		bindings = <
 		&kp F1	        &kp F2    &kp F3       &kp F4    &none          &kp KP_MULTIPLY &kp N7          &kp N8          &kp N9           &kp EQUAL
-		&mt LSHFT F5	&kp F6    &kp F7       &kp F8    &none          &kp KP_DOT      &kp N4          &kp N5          &kp N6           &kp KP_MINUS
-		&mt LCTRL F9	&kp F10   &kp F11      &kp F12   &none   		&kp N0          &kp N1          &kp N2          &kp N3           &kp KP_DIVIDE
+		&mt LSHFT F5	&kp F6    &kp F7       &kp F8    &none          &kp KP_DOT      &kp N4          &kp N5          &kp N6           &mt LSFT KP_MINUS
+		&mt LCTRL F9	&kp F10   &kp F11      &kp F12   &none   		&kp N0          &kp N1          &kp N2          &kp N3           &mt LCTRL KP_DIVIDE
                                                &kp LALT  &kp LGUI  	    &kp SPACE       &kp RET
 		>;
 		};	
