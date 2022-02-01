@@ -171,7 +171,7 @@
 		bt_layer {
 		bindings = <
 		&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4	&kp C_VOLUME_UP   &kp C_VOLUME_DOWN  &kp C_MUTE          &none           &none
-		&kp LSFT        &none           &none           &none           &bt BT_CLR	  	&kp C_BRIGHTNESS_INC      &kp C_BRIGHTNESS_DEC          &none           &none           &none
+		&kp LSFT        &out OUT_BLE           &out OUT_USB           &none           &bt BT_CLR	  	&kp C_BRIGHTNESS_INC      &kp C_BRIGHTNESS_DEC          &none           &none           &none
 		&kp LCTRL       &bt BT_NXT      &bt BT_PRV      &none           &none   		&none          &none          &none          &none           &none
                                                         &kp LALT        &kp LGUI  	    &kp SPACE       &kp RET
 		>;
