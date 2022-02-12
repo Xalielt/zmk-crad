@@ -8,6 +8,18 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/mouse.h>
+
+
+&mmv {
+    time-to-max-speed-ms = <500>;
+};
+
+&mwh {
+    acceleration-exponent=<1>;
+};
+
+
 
 
 &mt {
@@ -125,7 +137,7 @@
 		bindings = <
 		&lt 5 Q           &kp W           &kp E           &kp R         &lt 3 T 		    &kp Y           &kp U           &kp I           &kp O       &kp P 
 		&mt LSFT A      &kp S           &kp D           &kp F       &lt 4 G	   	    &kp H           &kp J           &kp K           &kp L       &mt LSFT SEMI
-		&mt LCTRL Z     &kp X           &kp C           &lt 1 V       &lt 2 B 		    &kp N           &kp M           &kp CMMA        &kp DOT     &mt LCTRL FSLH
+		&mt LCTRL Z     &lt 6 X           &kp C           &lt 1 V       &lt 2 B 		    &kp N           &kp M           &kp CMMA        &kp DOT     &mt LCTRL FSLH
           				                                &kp LALT      &kp LGUI  		&kp SPACE       &kp RET 
 		>;
 		};
@@ -177,6 +189,27 @@
                                                         &bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3
 		>;
 		};	
+		
+		mouse_layer{
+		bindings = <
+		&none	&none	&none	&none	&none		&none	&mkp LCLK	&mmv MOVE_UP	&mkp RCLK	&mwh SCROLL_UP
+		&none	&none	&none	&none	&none		&none	&mmv MOVE_LEFT	&mmv MOVE_DOWN	&mmv MOVE_RIGHT	&mwh SCROLL_DOWN
+		&none	&none	&none	&none	&none		&none	&none	&none	&none	&none
+					&none	&none		&none	&none	
+		>;
+		};
+		
+		
+		blank_layer{
+		bindings = <
+		&none	&none	&none	&none	&none		&none	&none	&none	&none	&none
+		&none	&none	&none	&none	&none		&none	&none	&none	&none	&none
+		&none	&none	&none	&none	&none		&none	&none	&none	&none	&none
+					&none	&none		&none	&none	
+		>;
+		};
+		
+		
         
 	};
   
