@@ -53,7 +53,7 @@
         combo_bspcl {
             timeout-ms = <50>;
             key-positions = <3 4>;
-            bindings = <&kp BSPC;
+            bindings = <&kp BSPC>;
         };
            combo_tab {
             timeout-ms = <50>;
