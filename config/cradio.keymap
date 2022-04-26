@@ -23,8 +23,8 @@
 
 
 &mt {
-    flavor = "tap-unless-interrupted";
-   tapping_term_ms = <300>;
+    flavor = "tap-preferred";
+   tapping_term_ms = <100>;
 };
 &lt {
    flavor = "tap-preferred";
