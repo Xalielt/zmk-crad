@@ -35,28 +35,28 @@
     combos {
         compatible = "zmk,combos";
         combo_esc {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         }; 
 
         combo_tilde {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <1 2>;
             bindings = <&kp GRAVE>;
         };        
         combo_quote {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <2 3>;
             bindings = <&kp SINGLE_QUOTE>;
         };        
         combo_bspcl {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <3 4>;
             bindings = <&kp BSPC>;
         };
            combo_tab {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <10 11>;
             bindings = <&kp TAB>;
         };
@@ -67,61 +67,61 @@
 
 
         combo_bspc {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <6 7>;
             bindings = <&kp BSPC>;
         };
 
            combo_del {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <7 8>;
             bindings = <&kp DEL>;
         };
            combo_pipe {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <8 9>;
             bindings = <&kp BSLH>;
         };
         
            combo_dash {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <15 16>;
             bindings = <&kp MINUS>;
         };
 
 
            combo_qmrk {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <17 18>;
             bindings = <&kp QMARK>;
         };
 
 
         combo_excl {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <16 17 18>;
             bindings = <&kp EXCL>;
         };
 
            combo_lpar {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <26 27>;
             bindings = <&kp LPAR>;
         };
 
            combo_rpar {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <27 28>;
             bindings = <&kp RPAR>;
         };
            combo_lbr {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <25 26 27>;
             bindings = <&kp LEFT_BRACKET>;
         };
 
            combo_rbr {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <26 27 28>;
             bindings = <&kp RIGHT_BRACKET>;
         };
