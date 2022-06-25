@@ -10,41 +10,43 @@
 #include <dt-bindings/zmk/outputs.h>
 
 
+
+
 &mt {
-    flavor = "tap-preferred";
-   tapping_term_ms = <200>;
+    flavor = "balanced";
+   tapping_term_ms = <275>;
 };
 &lt {
-   flavor = "hold-preferred";
-    tapping_term_ms = <200>;
+   flavor = "tap-preferred";
+    tapping_term_ms = <300>;
 };
 / { 
 
     combos {
         compatible = "zmk,combos";
         combo_esc {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         }; 
 
         combo_tilde {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <1 2>;
             bindings = <&kp GRAVE>;
         };        
         combo_quote {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <2 3>;
             bindings = <&kp SINGLE_QUOTE>;
         };        
-        combo_bspc2 {
-            timeout-ms = <50>;
+        combo_bspcl {
+            timeout-ms = <40>;
             key-positions = <3 4>;
             bindings = <&kp BSPC>;
         };
            combo_tab {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <10 11>;
             bindings = <&kp TAB>;
         };
@@ -55,61 +57,61 @@
 
 
         combo_bspc {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <6 7>;
             bindings = <&kp BSPC>;
         };
 
            combo_del {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <7 8>;
             bindings = <&kp DEL>;
         };
            combo_pipe {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <8 9>;
             bindings = <&kp BSLH>;
         };
         
            combo_dash {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <15 16>;
             bindings = <&kp MINUS>;
         };
 
 
            combo_qmrk {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <17 18>;
             bindings = <&kp QMARK>;
         };
 
 
         combo_excl {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <16 17 18>;
             bindings = <&kp EXCL>;
         };
 
            combo_lpar {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <26 27>;
             bindings = <&kp LPAR>;
         };
 
            combo_rpar {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <27 28>;
             bindings = <&kp RPAR>;
         };
            combo_lbr {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <25 26 27>;
             bindings = <&kp LEFT_BRACKET>;
         };
 
            combo_rbr {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <26 27 28>;
             bindings = <&kp RIGHT_BRACKET>;
         };
@@ -123,9 +125,9 @@
        	default_layer {
 		bindings = <
 		&lt 5 Q           &kp W           &kp E           &kp R         &lt 3 T 		    &kp Y           &kp U           &kp I           &kp O       &kp P 
-		&kp A      &kp S           &kp D           &kp F       &lt 4 G	   	    &kp H           &kp J           &kp K           &kp L       &mt LSFT SEMI
+		&mt LSFT A      &kp S           &kp D           &kp F       &lt 4 G	   	    &kp H           &kp J           &kp K           &kp L       &mt LSFT SEMI
 		&mt LCTRL Z     &kp X           &kp C           &lt 1 V       &lt 2 B 		    &kp N           &kp M           &kp CMMA        &kp DOT     &mt LCTRL FSLH
-          				                                &kp LALT      &kp LGUI  		&mt LSFT SPACE       &kp RET 
+          				                                &kp LALT      &kp LGUI  		&kp SPACE       &kp RET 
 		>;
 		};
 
@@ -134,7 +136,7 @@
         &kp BANG        &kp ATSN        &kp DLLR        &none        &kp PRCT    	    &kp CRRT        &kp AMPS        &kp EQUAL        &kp LPRN        &kp RPRN 
 		&kp TAB         &kp LC(S)       &kp DQT         &kp PIPE2       &kp HASH		&kp MINUS       &kp EQL         &kp LBKT        &kp RBKT        &kp DEL 
 		&kp ESC         &kp TILDE 	    &kp NON_US_BSLH &kp NON_US_HASH &kp TILDE2 		&kp MINUS       &kp GRAVE       &kp LBKT        &kp RBKT        &kp DEL 
-					                    	            &kp LALT        &kp LGUI 		&mt LSFT SPACE       &kp RET
+					                    	            &kp LALT        &kp LGUI 		&kp SPACE       &kp RET
 		>;
 		};
 
@@ -142,9 +144,9 @@
 		numpad_layer {
 		bindings = <
 		&kp F1	        &kp F2    &kp F3       &kp F4    &none          &kp KP_MULTIPLY &kp N7          &kp N8          &kp N9           &kp EQUAL
-		&kp F5	&kp F6    &kp F7       &kp F8    &none          &kp KP_DOT      &kp N4          &kp N5          &kp N6           &mt LSFT KP_MINUS
-		&kp F9	&kp F10   &kp F11      &kp F12   &none   		&kp N0          &kp N1          &kp N2          &kp N3           &mt LCTRL KP_DIVIDE
-                                               &kp LALT  &kp LGUI  	    &mt LSFT SPACE       &kp RET
+		&mt LSHFT F5	&kp F6    &kp F7       &kp F8    &none          &kp KP_DOT      &kp N4          &kp N5          &kp N6           &mt LSFT KP_MINUS
+		&mt LCTRL F9	&kp F10   &kp F11      &kp F12   &none   		&kp N0          &kp N1          &kp N2          &kp N3           &mt LCTRL KP_DIVIDE
+                                               &kp LALT  &kp LGUI  	    &kp SPACE       &kp RET
 		>;
 		};	
 			
@@ -154,7 +156,7 @@
 		&kp HOME    &kp END      &kp PAGE_UP   &kp PAGE_DOWN  &kp K_APP	&kp LG(X)      &kp LG(C)      &kp UP       &kp LG(V)    &kp P 
 		&kp LSFT    &kp S        &kp D         &none       &none		&kp LG(Z)      &kp LEFT       &kp DOWN     &kp RIGHT    &kp LSFT
 		&kp LCTRL   &kp X        &kp C         &kp V       &none    	&none          &none          &none        &none        &mt LCTRL RET
-					                           &kp LALT    &kp LGUI  	&mt LSFT SPACE       &kp RET
+					                           &kp LALT    &kp LGUI  	&kp SPACE      &kp RET
 		>;
 		};
 		
@@ -163,7 +165,7 @@
 		&kp HOME    &kp END      &kp PAGE_UP   &kp PAGE_DOWN &kp K_APP	    &kp LC(X)      &kp LC(C)      &kp UP       &kp LC(V)    &kp P
 		&kp LSFT    &kp S        &kp D        &none          &none		    &kp LC(Z)      &kp LEFT       &kp DOWN     &kp RIGHT    &kp LSFT
 		&kp LCTRL   &kp X        &kp C        &kp V          &none    	    &none          &none          &none        &none        &mt LCTRL RET
-                                            &kp LALT       &kp LGUI  	    &mt LSFT SPACE       &kp RET
+                                            &kp LALT       &kp LGUI  	    &kp SPACE      &kp RET
 		>;
 		};
 
@@ -176,8 +178,11 @@
                                                         &bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3
 		>;
 		};	
+
+
+		
+		
         
 	};
   
 };
-
