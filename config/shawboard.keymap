@@ -23,7 +23,6 @@
             bindings
                 = <&macro_tap &kp LS(J) &kp I &kp M &kp SPACE &kp LS(S) &kp H &kp A &kp W &kp RET> 
 		, <&macro_tap &kp J &kp I &kp M &kp ATSN &kp J &kp I &kp M &kp S &kp H &kp A &kp W &kp DOT &kp C &kp O &kp M &kp RET>
-                , <&macro_tap &kp N0 &kp N4 &kp N6 &kp N7 &kp N7 &kp N2 &kp N4 &kp N4 &kp N3 &kp N1 &kp RET>
 		;
         };
 	
@@ -149,7 +148,7 @@
        	default_layer {
 		bindings = <
 		&lt 5 Q  &kp W  &kp E  &kp R  &lt 3 T 	   &kp Y  &kp U   &kp I   &kp O   &kp P 
-		&kp A    &kp S  &kp D  &kp F  &lt 4 G	   &kp H  &kp J   &kp K   &kp L   &kp SEMI
+		&mt LSHFT A    &kp S  &kp D  &kp F  &lt 4 G	   &kp H  &kp J   &kp K   &kp L   &mt LSHFT SEMI
 		&mt LCTRL Z  &kp X  &kp C  &lt 1 V &lt 2 B &kp N  &kp M   &kp CMMA &kp DOT &mt LCTRL FSLH
                                 &none  &kp LALT &kp LGUI   &mt LSHFT SPACE &mt LCTRL RET   &to 2
 		>;
