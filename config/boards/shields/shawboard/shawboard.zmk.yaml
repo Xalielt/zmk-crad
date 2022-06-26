@@ -1,0 +1,12 @@
+file_format: "1"
+id: shawboard
+name: ShawBoard
+type: shield
+url: https://github.com/Xalielt/zmk-crad
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - shawboard_left
+  - shawboard_right
