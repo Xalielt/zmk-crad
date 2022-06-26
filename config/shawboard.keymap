@@ -26,6 +26,17 @@
                 , <&macro_tap &kp N0 &kp N4 &kp N6 &kp N7 &kp N7 &kp N2 &kp N4 &kp N4 &kp N3 &kp N1 &kp RET>
 		;
         };
+	
+	sig: signum {
+            label = "signum";
+            compatible = "zmk,behavior-macro";
+	    wait-ms = <35>;
+	    tap-ms = <35>;
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp N0 &kp N4 &kp N6 &kp N7 &kp SPACE &kp N7 &kp N2 &kp N4 &kp SPACE &kp N4 &kp N3 &kp N1 &kp RET>
+		;
+        };
     };
 };
 
@@ -95,7 +106,7 @@
 
            combo_qmrk {
             timeout-ms = <40>;
-            key-positions = <17 18>;
+            key-positions = <16 17>;
             bindings = <&kp SINGLE_QUOTE>;
         };
 
