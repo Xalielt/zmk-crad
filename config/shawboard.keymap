@@ -17,6 +17,8 @@
         sig: sig {
             label = "sig";
             compatible = "zmk,behavior-macro";
+	    wait-ms = <50>;
+	    tap-ms = <5>;
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
@@ -26,8 +28,8 @@
 		, <&macro_press &kp LSHFT>
                 , <&macro_tap &kp S>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp H &kp A &kp W &kp RET &kp J &kp I &kp M &kp ATSN &kp J &kp I &kp I &kp M &kp S &kp H &kp H &kp A &kp W &kp DOT &kp C &kp O &kp M &kp RET>
-                , <&macro_tap &kp N0 &kp N4 &kp N6 &kp N7 &kp N7 &kp N2 &kp N4 &kp N4 &kp N3 &kp N1 &kp RET>
+                , <&macro_tap &kp H &kp A &kp W &kp RET &kp J &kp I &kp M &kp ATSN &kp J &kp I &kp M &kp S &kp H &kp A &kp W &kp DOT &kp C &kp O &kp M &kp RET>
+                &kp N0 &kp N4 &kp N6 &kp N7 &kp N7 &kp N2 &kp N4 &kp N4 &kp N3 &kp N1 &kp RET>
 		;
         };
     };
