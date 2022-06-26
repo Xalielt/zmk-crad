@@ -18,7 +18,7 @@
             label = "sig";
             compatible = "zmk,behavior-macro";
 	    wait-ms = <50>;
-	    tap-ms = <5>;
+	    tap-ms = <30>;
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
