@@ -27,7 +27,7 @@
 		;
         };
 	
-	sig: signum {
+	signum: signum {
             label = "signum";
             compatible = "zmk,behavior-macro";
 	    wait-ms = <35>;
@@ -179,7 +179,7 @@
 		bindings = <		
 		&kp HOME    &kp END      &kp PAGE_UP   &kp PAGE_DOWN  &kp K_APP	&kp LG(X)      &kp LG(C)      &kp UP       &kp LG(V)    &kp P 
 		&kp LSFT    &kp S        &kp D         &none       &none	&kp LG(Z)      &kp LEFT       &kp DOWN     &kp RIGHT    &kp LSFT
-		&kp LCTRL   &kp X        &kp C         &kp V       &none    	&sig          &none          &none        &none        &mt LCTRL RET
+		&kp LCTRL   &kp X        &kp C         &kp V       &none    	&sig          &signum          &none        &none        &mt LCTRL RET
 				         &to 0         &kp LALT    &kp LGUI  	&mt LSHFT SPACE      &mt LCTRL RET	      &to 4
 		>;
 		};
@@ -188,7 +188,7 @@
 		bindings = <		
 		&kp HOME    &kp END      &kp PAGE_UP   &kp PAGE_DOWN &kp K_APP	    &kp LC(X)      &kp LC(C)      &kp UP       &kp LC(V)    &kp P
 		&kp LSFT    &kp S        &kp D        &none          &none          &kp LC(Z)      &kp LEFT       &kp DOWN     &kp RIGHT    &kp LSFT
-		&kp LCTRL   &kp X        &kp C        &kp V          &none    	    &sig          &none          &none        &none        &mt LCTRL RET
+		&kp LCTRL   &kp X        &kp C        &kp V          &none    	    &sig          &signum          &none        &none        &mt LCTRL RET
                                          &to 0        &kp LALT       &kp LGUI  	    &mt LSHFT SPACE      &mt LCTRL RET	&to 3
 		>;
 		};
