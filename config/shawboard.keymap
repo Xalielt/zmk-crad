@@ -77,7 +77,7 @@
 
            combo_word {
             timeout-ms = <40>;
-            key-positions = <5 6 7z>;
+            key-positions = <5 6 7>;
             bindings = <&kp LC(BSPC)>;
         };
 
