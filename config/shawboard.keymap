@@ -160,7 +160,7 @@
 		&lt 5 Q  &kp W  &kp E  &kp R  &lt 3 T 	   &kp Y  &kp U   &kp I   &kp O   &kp P 
 		&mt LSHFT A    &kp S  &kp D  &kp F  &lt 4 G	   &kp H  &kp J   &kp K   &kp L   &mt LSHFT SEMI
 		&mt LCTRL Z  &kp X  &kp C  &lt 1 V &lt 2 B &kp N  &kp M   &kp CMMA &kp DOT &mt LCTRL FSLH
-                                &to 2  &kp LALT &kp LGUI   &mt LG(LA(LC(LSHFT))) SPACE &mt LCTRL RET   &kp RALT
+                                &to 2  &kp LALT &kp LGUI   &mt LSHFT SPACE &mt LCTRL RET   &kp RALT
 		>;
 		};
 
@@ -205,10 +205,10 @@
 
 		bt_layer {
 		bindings = <
-		&none      &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3   &bt BT_SEL 4	&kp C_VOLUME_UP       &kp C_VOLUME_DOWN     &kp C_MUTE  &none  &none
-		&kp LSFT   &out OUT_BLE    &out OUT_USB    &none          &bt BT_CLR	&kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &none       &none  &none
+		&none      &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3   &bt BT_SEL 4	&kp C_VOLUME_UP       &kp C_VOLUME_DOWN     &kp C_MUTE  &none  &bt BT_CLR
+		&kp LSFT   &out OUT_BLE    &out OUT_USB    &none          &none		&kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &none       &none  &none
 		&kp LCTRL  &bt BT_NXT      &bt BT_PRV      &none          &none   	&none                 &none                 &none       &none  &bt BT_SEL 4
-                                           &to 0           &bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3    &none
+                                           &to 0           &bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3    &bt BT_SEL 4
 		>;
 		};	
 
